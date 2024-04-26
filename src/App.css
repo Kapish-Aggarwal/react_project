@@ -1,0 +1,46 @@
+* {
+  --bg-color: #000;
+  --text-color: #fff;
+  --secondary-color: #645c5c;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+h2 {
+  font-size: 2rem;
+  margin: 0.75rem 0;
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  scale: 105%;
+}
+
+.divider {
+  border: 2px solid var(--secondary-color);
+  margin: 0.5rem 0;
+}
+
+footer {
+  display: flex;
+  padding: 1rem 3rem;
+  justify-content: space-around;
+  background-color: var(--bg-color-1);
+}
+
+footer a {
+  margin: 0.5rem;
+}

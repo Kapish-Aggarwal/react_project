@@ -1,0 +1,30 @@
+.InputBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.InputTitle {
+  font-weight: bold;
+  margin: 0.25rem 0rem;
+}
+
+.Input {
+  --border-color: #645c5c;
+  --focus-border-color: #948888;
+
+  outline: none;
+  font-weight: bold;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: var(--border-color);
+  border-style: solid;
+  margin: 0.25rem 0;
+  padding: 2px 4px;
+  resize: vertical;
+}
+.Input:focus-visible {
+  background-color: #2727275b;
+  border-color: var(--focus-border-color);
+}

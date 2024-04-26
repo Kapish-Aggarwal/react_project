@@ -1,0 +1,32 @@
+#Form {
+  margin: 2rem 5rem;
+}
+
+.formBorder {
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: #ffffff59 0px 0px 1rem;
+}
+
+#Form .divider {
+  border-width: 1px;
+}
+
+.button {
+  background-color: var(--bg-color-1);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+.button.buttonClear {
+  background-color: #5f1111;
+}
+.button:hover {
+  scale: 105%;
+}
+
+@media (max-width: 600px) {
+  .formBorder {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,164 @@
+* {
+  --text-color-1: #ffff00;
+  --bg-color-1: #ffffff20;
+  --bg-color-2: #ffffff31;
+}
+
+#Builder {
+  /* height: 100vh;
+  overflow-y: scroll; */
+  margin-top: 5rem;
+}
+
+nav {
+  position: sticky;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid var(--bg-color-1);
+  padding: 0 2rem;
+}
+
+nav h1 span {
+  color: var(--text-color-1);
+}
+
+nav a {
+  margin: 0 1rem;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  padding: 2rem 5rem;
+}
+
+#home .name {
+  color: var(--text-color-1);
+}
+
+#home img {
+  width: 30%;
+  flex-shrink: 1;
+  flex-grow: 2;
+}
+
+#aboutMe {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 5rem;
+  background-color: var(--bg-color-1);
+}
+
+#aboutMe img {
+  width: 30%;
+  flex-shrink: 1;
+  flex-grow: 2;
+  margin: 0 2rem;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 5rem;
+}
+
+#skills h1 {
+  color: var(--text-color-1);
+}
+
+#skills .skillBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#skills .skillCard {
+  background-color: var(--bg-color-1);
+  border-radius: 8px;
+  min-width: 35%;
+  padding: 2rem;
+  margin: 2rem 2rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: x-large;
+}
+#skills .skillCard:hover {
+  scale: 105%;
+}
+
+#education {
+  display: flex;
+  align-items: center;
+  padding: 2rem 5rem;
+  justify-content: space-around;
+  background-color: var(--bg-color-1);
+}
+
+#education h2 {
+  text-align: center;
+  color: var(--text-color-1);
+}
+
+#education .itemsBox {
+  background-color: var(--bg-color-2);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin: 2rem 0;
+}
+#education .itemsBox:hover {
+  scale: 105%;
+}
+
+#education .itemsBox p {
+  font-size: large;
+  margin: 0.5rem 0;
+}
+
+#contactMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 5rem;
+}
+
+#contactMe form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contactMe form input,
+#contactMe form textarea {
+  width: 100%;
+  resize: vertical;
+  margin: 0.5rem 0;
+  padding: 0.25rem 0.5rem;
+  font-weight: bold;
+}
+#contactMe form button {
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--text-color-1);
+  font-size: larger;
+  font-weight: bolder;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+#contactMe form button:hover {
+  scale: 102%;
+}
+
+#contactMe .iconButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contactMe .icon {
+  color: var(--text-color-1);
+}
