@@ -4,12 +4,6 @@
   --bg-color-2: #0f0f0f23;
 }
 
-#Builder {
-  /* height: 100vh;
-  overflow-y: scroll; */
-  margin-top: 5rem;
-}
-
 nav {
   position: sticky;
   display: flex;
@@ -142,13 +136,14 @@ nav a {
   font-weight: bold;
 }
 #contactMe form button {
-  width: 100%;
+  --text-color-1: #0044ff33;
+
   border-radius: 8px;
   border: none;
   background-color: var(--text-color-1);
   font-size: larger;
   font-weight: bolder;
-  padding: 0.25rem 0.5rem;
+  padding: 0.5rem 2rem;
   cursor: pointer;
 }
 #contactMe form button:hover {

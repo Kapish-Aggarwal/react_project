@@ -3,6 +3,12 @@ import Form from "./Components/Form/Form";
 import Builder from "./Components/Builder/Builder";
 import { useState } from "react";
 import FormData from "./formData";
+import {
+  clear,
+  loadPreset1,
+  loadPreset2,
+  loadPreset3,
+} from "./Components/Form/presets";
 
 function App() {
   const [data, setData] = useState({
@@ -11,28 +17,66 @@ function App() {
 
   return (
     <main>
-      <Form questions={FormData} data={data} setData={setData} />
-      <div className="divider" />
+      {data?.showForm && (
+        <Form questions={FormData} data={data} setData={setData} />
+      )}
+      {/* <div className="divider" /> */}
       {data?.showBuilder && <Builder data={data} />}
-      <footer>
-        <div>
-          <a href="https://www.facebook.com/">
-            <i className="fa-brands fa-facebook"></i>
-          </a>
-          <a href="https://www.instagram.com/">
-            <i className="fa-brands fa-instagram"></i>
-          </a>
-          <a href="https://in.linkedin.com/">
-            <i className="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a href="https://twitter.com/?lang=en">
-            <i className="fa-brands fa-twitter"></i>
-          </a>
+      {!data?.showForm && (
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-around",
+            margin: "2rem 0",
+          }}
+        >
+          <div
+            className="button"
+            onClick={() => {
+              loadPreset1(setData);
+              window.scrollTo(0, 0);
+            }}
+          >
+            Load Preset 1
+          </div>
+          <div
+            className="button"
+            onClick={() => {
+              loadPreset2(setData);
+              window.scrollTo(0, 0);
+            }}
+          >
+            Load Preset 2
+          </div>
+          <div
+            className="button"
+            onClick={() => {
+              loadPreset3(setData);
+              window.scrollTo(0, 0);
+            }}
+          >
+            Load Preset 3
+          </div>
+          <div
+            className="button"
+            onClick={() => {
+              setData({ ...data, showForm: true });
+              window.scrollTo(0, 0);
+            }}
+          >
+            Edit
+          </div>
+          <div
+            className="button buttonClear"
+            onClick={() => {
+              clear(setData);
+              window.scrollTo(0, 0);
+            }}
+          >
+            Clear
+          </div>
         </div>
-        <div>
-          CopyRight © 2023 Website Template by kaps. All Rights Reserved
-        </div>
-      </footer>
+      )}
     </main>
   );
 }

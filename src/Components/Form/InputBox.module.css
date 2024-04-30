@@ -9,6 +9,7 @@
 
 .InputTitle {
   font-weight: bold;
+  max-width: 30%;
   margin: auto;
 }
 

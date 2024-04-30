@@ -5,7 +5,7 @@
 .formBorder {
   border-radius: 0.5rem;
   padding: 2rem;
-  box-shadow: #0f0f0f59 0px 0px 1rem;
+  box-shadow: #0044ff75 0px 0px 1rem;
 }
 
 #Form .divider {
@@ -13,8 +13,11 @@
 }
 
 .button {
+  --bg-color-1: #0044ff33;
+
   font-weight: bold;
   background-color: var(--bg-color-1);
+  border: 2px solid;
   cursor: pointer;
   padding: 0.5rem 1rem;
   border-radius: 8px;

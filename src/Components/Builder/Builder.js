@@ -129,6 +129,25 @@ export default function Builder({ data }) {
           </div>
         </section>
       </section>
+      <footer>
+        <div>
+          <a href="https://www.facebook.com/">
+            <i className="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/">
+            <i className="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://in.linkedin.com/">
+            <i className="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://twitter.com/?lang=en">
+            <i className="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+        <div>
+          CopyRight © 2023 Website Template by kaps. All Rights Reserved
+        </div>
+      </footer>
     </div>
   );
 }
